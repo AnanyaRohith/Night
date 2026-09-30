@@ -1,4 +1,4 @@
-# night jar 🌙
+# night jar
 
 > you're up. put the thought in the jar.
 
