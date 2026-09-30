@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>night jar</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head><body>
+<canvas id="sky"></canvas>
+<main>
+<header><h1>night jar</h1><p>you're up. put the thought in the jar.</p></header>
+<div id="moon"><svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="40" fill="#1a2350" stroke="#3a4785" stroke-width="2"/><path id="lit" fill="#f3ebc4"/></svg><div id="mname"></div></div>
+<svg id="jar" viewBox="0 0 200 260" role="img" aria-label="A glass jar of paper stars">
+<path d="M62 40V58C62 70 30 74 30 100V220Q30 244 54 244H146Q170 244 170 220V100C170 74 138 70 138 58V40Z" fill="rgba(170,190,255,.09)" stroke="rgba(205,218,255,.6)" stroke-width="3"/>
+<g id="stars"></g>
+<path d="M40 104V210" stroke="rgba(255,255,255,.22)" stroke-width="4" stroke-linecap="round"/>
+<rect x="54" y="24" width="92" height="18" rx="3" fill="#8a6a45" stroke="#5b4429" stroke-width="2"/>
+<path d="M62 30H138M62 36H138" stroke="#6d5335" stroke-width="2"/>
+</svg>
+<button id="write">write a thought</button>
+<div id="count"></div>
+<div class="note">thoughts stay in this browser. nothing is sent anywhere.</div>
+</main>
+
+<div class="veil" id="wv"><div class="card" role="dialog" aria-label="Write a thought">
+<h2>what's keeping you up?</h2>
+<textarea id="tx" maxlength="400" placeholder="type it out. it's only yours."></textarea>
+<div class="note" style="margin-top:8px">pick a paper</div>
+<div class="sw" id="sw" role="radiogroup"></div>
+<div class="row"><button id="cancel">not now</button><button id="fold" disabled>fold it into a star</button></div>
+</div></div>
+
+<div class="veil" id="rv"></div>
+<div id="acts"><button id="keep">fold it back</button><button id="go">let it go</button></div>
+
+<script src="script.js"></script></body></html>
